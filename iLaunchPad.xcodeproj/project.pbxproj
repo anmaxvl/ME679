@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5FFF51B1847114D00928877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FFF51A1847114D00928877 /* Foundation.framework */; };
+		A5FFF51D1847114D00928877 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FFF51C1847114D00928877 /* CoreGraphics.framework */; };
+		A5FFF51F1847114D00928877 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FFF51E1847114D00928877 /* UIKit.framework */; };
+		A5FFF5251847114D00928877 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5FFF5231847114D00928877 /* InfoPlist.strings */; };
+		A5FFF5271847114D00928877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FFF5261847114D00928877 /* main.m */; };
+		A5FFF52B1847114D00928877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FFF52A1847114D00928877 /* AppDelegate.m */; };
+		A5FFF52E1847114D00928877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5FFF52C1847114D00928877 /* Main.storyboard */; };
+		A5FFF5311847114D00928877 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FFF5301847114D00928877 /* ViewController.m */; };
+		A5FFF5331847114D00928877 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5FFF5321847114D00928877 /* Images.xcassets */; };
+		A5FFF53A1847114D00928877 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FFF5391847114D00928877 /* XCTest.framework */; };
+		A5FFF53B1847114D00928877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FFF51A1847114D00928877 /* Foundation.framework */; };
+		A5FFF53C1847114D00928877 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FFF51E1847114D00928877 /* UIKit.framework */; };
+		A5FFF5441847114D00928877 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5FFF5421847114D00928877 /* InfoPlist.strings */; };
+		A5FFF5461847114D00928877 /* iLaunchPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FFF5451847114D00928877 /* iLaunchPadTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5FFF53D1847114D00928877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5FFF50F1847114D00928877 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5FFF5161847114D00928877;
+			remoteInfo = iLaunchPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5FFF5171847114D00928877 /* iLaunchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLaunchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FFF51A1847114D00928877 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5FFF51C1847114D00928877 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5FFF51E1847114D00928877 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5FFF5221847114D00928877 /* iLaunchPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iLaunchPad-Info.plist"; sourceTree = "<group>"; };
+		A5FFF5241847114D00928877 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5FFF5261847114D00928877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5FFF5281847114D00928877 /* iLaunchPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iLaunchPad-Prefix.pch"; sourceTree = "<group>"; };
+		A5FFF5291847114D00928877 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5FFF52A1847114D00928877 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5FFF52D1847114D00928877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5FFF52F1847114D00928877 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A5FFF5301847114D00928877 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A5FFF5321847114D00928877 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5FFF5381847114D00928877 /* iLaunchPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLaunchPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FFF5391847114D00928877 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A5FFF5411847114D00928877 /* iLaunchPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iLaunchPadTests-Info.plist"; sourceTree = "<group>"; };
+		A5FFF5431847114D00928877 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5FFF5451847114D00928877 /* iLaunchPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iLaunchPadTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5FFF5141847114D00928877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FFF51D1847114D00928877 /* CoreGraphics.framework in Frameworks */,
+				A5FFF51F1847114D00928877 /* UIKit.framework in Frameworks */,
+				A5FFF51B1847114D00928877 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FFF5351847114D00928877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FFF53A1847114D00928877 /* XCTest.framework in Frameworks */,
+				A5FFF53C1847114D00928877 /* UIKit.framework in Frameworks */,
+				A5FFF53B1847114D00928877 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5FFF50E1847114D00928877 = {
+			isa = PBXGroup;
+			children = (
+				A5FFF5201847114D00928877 /* iLaunchPad */,
+				A5FFF53F1847114D00928877 /* iLaunchPadTests */,
+				A5FFF5191847114D00928877 /* Frameworks */,
+				A5FFF5181847114D00928877 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5FFF5181847114D00928877 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5FFF5171847114D00928877 /* iLaunchPad.app */,
+				A5FFF5381847114D00928877 /* iLaunchPadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5FFF5191847114D00928877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5FFF51A1847114D00928877 /* Foundation.framework */,
+				A5FFF51C1847114D00928877 /* CoreGraphics.framework */,
+				A5FFF51E1847114D00928877 /* UIKit.framework */,
+				A5FFF5391847114D00928877 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5FFF5201847114D00928877 /* iLaunchPad */ = {
+			isa = PBXGroup;
+			children = (
+				A5FFF5291847114D00928877 /* AppDelegate.h */,
+				A5FFF52A1847114D00928877 /* AppDelegate.m */,
+				A5FFF52C1847114D00928877 /* Main.storyboard */,
+				A5FFF52F1847114D00928877 /* ViewController.h */,
+				A5FFF5301847114D00928877 /* ViewController.m */,
+				A5FFF5321847114D00928877 /* Images.xcassets */,
+				A5FFF5211847114D00928877 /* Supporting Files */,
+			);
+			path = iLaunchPad;
+			sourceTree = "<group>";
+		};
+		A5FFF5211847114D00928877 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5FFF5221847114D00928877 /* iLaunchPad-Info.plist */,
+				A5FFF5231847114D00928877 /* InfoPlist.strings */,
+				A5FFF5261847114D00928877 /* main.m */,
+				A5FFF5281847114D00928877 /* iLaunchPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5FFF53F1847114D00928877 /* iLaunchPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5FFF5451847114D00928877 /* iLaunchPadTests.m */,
+				A5FFF5401847114D00928877 /* Supporting Files */,
+			);
+			path = iLaunchPadTests;
+			sourceTree = "<group>";
+		};
+		A5FFF5401847114D00928877 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5FFF5411847114D00928877 /* iLaunchPadTests-Info.plist */,
+				A5FFF5421847114D00928877 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5FFF5161847114D00928877 /* iLaunchPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5FFF5491847114D00928877 /* Build configuration list for PBXNativeTarget "iLaunchPad" */;
+			buildPhases = (
+				A5FFF5131847114D00928877 /* Sources */,
+				A5FFF5141847114D00928877 /* Frameworks */,
+				A5FFF5151847114D00928877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iLaunchPad;
+			productName = iLaunchPad;
+			productReference = A5FFF5171847114D00928877 /* iLaunchPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5FFF5371847114D00928877 /* iLaunchPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5FFF54C1847114D00928877 /* Build configuration list for PBXNativeTarget "iLaunchPadTests" */;
+			buildPhases = (
+				A5FFF5341847114D00928877 /* Sources */,
+				A5FFF5351847114D00928877 /* Frameworks */,
+				A5FFF5361847114D00928877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5FFF53E1847114D00928877 /* PBXTargetDependency */,
+			);
+			name = iLaunchPadTests;
+			productName = iLaunchPadTests;
+			productReference = A5FFF5381847114D00928877 /* iLaunchPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5FFF50F1847114D00928877 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = GIST;
+				TargetAttributes = {
+					A5FFF5371847114D00928877 = {
+						TestTargetID = A5FFF5161847114D00928877;
+					};
+				};
+			};
+			buildConfigurationList = A5FFF5121847114D00928877 /* Build configuration list for PBXProject "iLaunchPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5FFF50E1847114D00928877;
+			productRefGroup = A5FFF5181847114D00928877 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5FFF5161847114D00928877 /* iLaunchPad */,
+				A5FFF5371847114D00928877 /* iLaunchPadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5FFF5151847114D00928877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FFF5331847114D00928877 /* Images.xcassets in Resources */,
+				A5FFF5251847114D00928877 /* InfoPlist.strings in Resources */,
+				A5FFF52E1847114D00928877 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FFF5361847114D00928877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FFF5441847114D00928877 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5FFF5131847114D00928877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FFF5311847114D00928877 /* ViewController.m in Sources */,
+				A5FFF52B1847114D00928877 /* AppDelegate.m in Sources */,
+				A5FFF5271847114D00928877 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FFF5341847114D00928877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FFF5461847114D00928877 /* iLaunchPadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5FFF53E1847114D00928877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5FFF5161847114D00928877 /* iLaunchPad */;
+			targetProxy = A5FFF53D1847114D00928877 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5FFF5231847114D00928877 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5FFF5241847114D00928877 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5FFF52C1847114D00928877 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5FFF52D1847114D00928877 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5FFF5421847114D00928877 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5FFF5431847114D00928877 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5FFF5471847114D00928877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5FFF5481847114D00928877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5FFF54A1847114D00928877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iLaunchPad/iLaunchPad-Prefix.pch";
+				INFOPLIST_FILE = "iLaunchPad/iLaunchPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5FFF54B1847114D00928877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iLaunchPad/iLaunchPad-Prefix.pch";
+				INFOPLIST_FILE = "iLaunchPad/iLaunchPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A5FFF54D1847114D00928877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iLaunchPad.app/iLaunchPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iLaunchPad/iLaunchPad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iLaunchPadTests/iLaunchPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A5FFF54E1847114D00928877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iLaunchPad.app/iLaunchPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iLaunchPad/iLaunchPad-Prefix.pch";
+				INFOPLIST_FILE = "iLaunchPadTests/iLaunchPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5FFF5121847114D00928877 /* Build configuration list for PBXProject "iLaunchPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FFF5471847114D00928877 /* Debug */,
+				A5FFF5481847114D00928877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5FFF5491847114D00928877 /* Build configuration list for PBXNativeTarget "iLaunchPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FFF54A1847114D00928877 /* Debug */,
+				A5FFF54B1847114D00928877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5FFF54C1847114D00928877 /* Build configuration list for PBXNativeTarget "iLaunchPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FFF54D1847114D00928877 /* Debug */,
+				A5FFF54E1847114D00928877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5FFF50F1847114D00928877 /* Project object */;
+}
