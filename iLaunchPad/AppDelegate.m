@@ -13,6 +13,52 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // Hide statusbar on the device
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    // Check if the Profiles directory was created, if not create it and create a text file which will keep the information
+    // about existing profiles
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    // Check if the Profiles directory was created
+    NSString *profilesPath = [documentsDirectory stringByAppendingString:@"/Profiles"];
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:profilesPath]) {
+        NSError *error;
+        //Creating Profiles Directory in the Application "Documents" directory
+        [[NSFileManager defaultManager] createDirectoryAtPath:profilesPath
+                                  withIntermediateDirectories:NO
+                                                   attributes:nil
+                                                        error:&error];
+    }
+    
+    // Create Profiles.txt which will keep the number of profiles created as well as the name list, each name written on a new line
+    if ([[NSFileManager defaultManager] fileExistsAtPath:profilesPath]) {
+        NSString *profilesListFile = [documentsDirectory stringByAppendingString:@"/Profiles/Profiles.txt"];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:profilesListFile]) {
+            NSString *fileContent = @"0\n";
+            const char *utfString = [fileContent UTF8String];
+            NSData *fileData = [NSData dataWithBytes:utfString length:strlen(utfString)];
+            [[NSFileManager defaultManager] createFileAtPath:profilesListFile contents:fileData attributes:nil];
+        }
+    }
+    
+    NSString *sessionsPath = [documentsDirectory stringByAppendingString:@"/Sessions"];
+    
+    // Check if Sessions directory was created
+    if (![[NSFileManager defaultManager] fileExistsAtPath:sessionsPath]) {
+        NSError *error;
+        //Creating Sessions Directory in the Application "Documents" directory
+        [[NSFileManager defaultManager] createDirectoryAtPath:sessionsPath
+                                  withIntermediateDirectories:NO
+                                                   attributes:nil
+                                                        error:&error];
+    }
+
+    
     return YES;
 }
 							

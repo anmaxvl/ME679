@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ukp-hd-xD0"/>
+                        <viewControllerLayoutGuide type="bottom" id="B8c-Hm-ha1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyY-AF-5qz" customClass="LaunchPadKeyPadView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view tag="100" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nun-L5-d7f" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="0.0" y="17" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="UGc-XG-F1s">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-eX-q9U">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="Nun-L5-d7f" eventType="touchUpInside" id="XcG-BA-281"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="ocp-eX-q9U" id="lre-4j-JQW"/>
+                                            <outlet property="micImageView" destination="UGc-XG-F1s" id="rP0-Tl-bgC"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="ibB-dS-c3g"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="101" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="APm-DH-3OZ" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="107" y="17" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Fp-VF-fbO">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWm-19-34V">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="APm-DH-3OZ" eventType="touchUpInside" id="yap-tH-jgY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="yWm-19-34V" id="8xP-ev-pYz"/>
+                                            <outlet property="micImageView" destination="2Fp-VF-fbO" id="be9-Ha-CKh"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="vnZ-1d-zVf"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="102" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mPU-vR-e5N" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="214" y="17" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="W53-6h-jUz">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMN-bd-rI2">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="mPU-vR-e5N" eventType="touchUpInside" id="hAh-sL-esT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="aMN-bd-rI2" id="0E5-3U-ju2"/>
+                                            <outlet property="micImageView" destination="W53-6h-jUz" id="vZ3-Jj-SLV"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="wYS-5J-x2e"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="103" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sc7-sb-zy2" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="0.0" y="133" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="jCh-mu-7t2">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHd-tt-boR">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="Sc7-sb-zy2" eventType="touchUpInside" id="s3d-BP-8wz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="bHd-tt-boR" id="KU1-ic-pEQ"/>
+                                            <outlet property="micImageView" destination="jCh-mu-7t2" id="kRo-GT-XBb"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="90q-Vy-3tk"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-HK-uiX" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="107" y="133" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="KYD-Rf-Prz">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kab-Kd-6ya">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="Jjo-HK-uiX" eventType="touchUpInside" id="Syj-Gw-0pi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="Kab-Kd-6ya" id="PzQ-Oj-1Xm"/>
+                                            <outlet property="micImageView" destination="KYD-Rf-Prz" id="v3o-DY-cKh"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="DBv-aA-bqz"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="105" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xZs-Ij-boD" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="214" y="133" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eh9-vd-OsR">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTk-Tz-SU6">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="xZs-Ij-boD" eventType="touchUpInside" id="6Jg-Gf-4kF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="KTk-Tz-SU6" id="80Y-FX-bvT"/>
+                                            <outlet property="micImageView" destination="Eh9-vd-OsR" id="YzG-Zv-5bz"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="OcT-iY-hhm"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="106" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oej-61-T9d" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="0.0" y="249" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="K5v-Uf-c52">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myV-gk-5Rq">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="oej-61-T9d" eventType="touchUpInside" id="lYO-AG-oHe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="myV-gk-5Rq" id="ZIz-VF-MT2"/>
+                                            <outlet property="micImageView" destination="K5v-Uf-c52" id="Spc-D9-zbz"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="Vmq-FW-SSm"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="107" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zA-m7-ixB" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="107" y="249" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dwD-fM-OMJ">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpn-RG-ycJ">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="8zA-m7-ixB" eventType="touchUpInside" id="mla-dz-i5D"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="mpn-RG-ycJ" id="94G-Vs-YN3"/>
+                                            <outlet property="micImageView" destination="dwD-fM-OMJ" id="D0G-FP-reu"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="79X-tS-fhn"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="108" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nN4-mY-IbX" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="214" y="249" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="EM6-Nh-Srt">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkN-6J-0G1">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="nN4-mY-IbX" eventType="touchUpInside" id="cvu-Dt-gNQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="FkN-6J-0G1" id="nI5-ub-yO7"/>
+                                            <outlet property="micImageView" destination="EM6-Nh-Srt" id="POh-Xl-eNh"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="T9w-ia-UFn"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="109" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9g-rJ-Nx2" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="0.0" y="365" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vp1-hS-uNT">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhZ-AN-XFy">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="F9g-rJ-Nx2" eventType="touchUpInside" id="WC5-j7-bkC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="GhZ-AN-XFy" id="B49-Fb-KXY"/>
+                                            <outlet property="micImageView" destination="Vp1-hS-uNT" id="6UY-Sd-BJx"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="L5T-w1-8VI"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="110" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HAN-Kf-geF" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="107" y="365" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="xXf-qh-olh">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SM-Fh-sUz">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="HAN-Kf-geF" eventType="touchUpInside" id="BSe-8z-EE3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="downButton" destination="7SM-Fh-sUz" id="LPO-rk-NLO"/>
+                                            <outlet property="micImageView" destination="xXf-qh-olh" id="h3d-ix-qDD"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="aMB-Vd-gZB"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="111" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udf-aG-HOx" customClass="LaunchPadKeyView">
+                                        <rect key="frame" x="214" y="365" width="106" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2.png" highlightedImage="mic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7dk-36-UaG">
+                                                <rect key="frame" x="23" y="28" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-z3-ScB">
+                                                <rect key="frame" x="76" y="85" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="down.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButtonOnClickListener:" destination="Udf-aG-HOx" eventType="touchUpInside" id="gKY-56-JYu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.71429982380000001" green="1" blue="0.75484649069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="downButton" destination="6Pa-z3-ScB" id="Zt3-Zt-HRn"/>
+                                            <outlet property="micImageView" destination="7dk-36-UaG" id="Wug-0N-q2k"/>
+                                            <outlet property="superViewDelegate" destination="lyY-AF-5qz" id="IzM-BR-URc"/>
+                                        </connections>
+                                    </view>
+                                    <button opaque="NO" tag="999" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErZ-lz-4Gw">
+                                        <rect key="frame" x="140" y="-9" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="toggle-down.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toggleButtonCLickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rdp-Ht-UcT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxN-30-GUT" customClass="ListView">
+                                <rect key="frame" x="320" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UQa-DW-smg">
+                                        <rect key="frame" x="0.0" y="60" width="320" height="420"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0T6-x5-je7">
+                                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" backgroundImage="back.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonClickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KXY-TS-IQq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="444" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMf-oZ-LrI">
+                                        <rect key="frame" x="260" y="5" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" backgroundImage="edit.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editButtonClickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zhf-F3-Hkd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdr-1I-ddw">
+                                        <rect key="frame" x="135" y="5" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="plus.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="plusButtonClickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ncw-xP-xho"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.43971499990000001" blue="0.48360550209999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="backButton" destination="0T6-x5-je7" id="rUs-yY-EAH"/>
+                                    <outlet property="contentTable" destination="UQa-DW-smg" id="abM-sn-Eai"/>
+                                    <outlet property="editButton" destination="QMf-oZ-LrI" id="mTH-O2-MBQ"/>
+                                    <outlet property="plusButton" destination="Sdr-1I-ddw" id="Jdx-V6-jAd"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ete-EE-flJ">
+                                <rect key="frame" x="320" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKE-dp-8Nz">
+                                        <rect key="frame" x="110" y="190" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" backgroundImage="play-big.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startButtonClickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hst-0X-zQr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59194175969999996" green="0.87723122340000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1To-YF-5H2" customClass="TextFieldView">
+                                <rect key="frame" x="20" y="-150" width="280" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oWm-4b-DxO">
+                                        <rect key="frame" x="30" y="45" width="220" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="4M6-VD-c2V"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z61-h8-sbC">
+                                        <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="cancel.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonClickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="afq-0B-WLn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.34721887027512999" green="1" blue="0.62431579639947588" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="cancelButton" destination="Z61-h8-sbC" id="wLw-sa-amp"/>
+                                    <outlet property="textFieldView" destination="oWm-4b-DxO" id="iPW-Y3-NnB"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tl2-O9-WS3">
+                                <rect key="frame" x="0.0" y="30" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="777" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWM-PL-LGJ">
+                                        <rect key="frame" x="260" y="10" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="edit.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editButtonClickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="51o-nb-vio"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txE-i2-DsR">
+                                        <rect key="frame" x="140" y="10" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="switch.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchProfileButtonClickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mvl-xS-ZHY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="555" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78h-f6-WNU">
+                                        <rect key="frame" x="20" y="10" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="play-cell.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonClickListener:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eqT-e7-3Se"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.43971499990000001" blue="0.48360550209999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="adjustableListView" destination="zxN-30-GUT" id="DUt-62-p7P"/>
+                        <outlet property="launchPadView" destination="lyY-AF-5qz" id="nVz-rX-I9P"/>
+                        <outlet property="menuView" destination="Tl2-O9-WS3" id="vxm-sA-K3k"/>
+                        <outlet property="startUpView" destination="Ete-EE-flJ" id="PMc-eq-QhS"/>
+                        <outlet property="textFieldView" destination="1To-YF-5H2" id="Kun-9P-8Kp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="190"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back.png" width="512" height="512"/>
+        <image name="cancel.png" width="100" height="100"/>
+        <image name="down.png" width="128" height="128"/>
+        <image name="edit.png" width="120" height="120"/>
+        <image name="mic2.png" width="512" height="512"/>
+        <image name="play-big.png" width="147" height="147"/>
+        <image name="play-cell.png" width="250" height="250"/>
+        <image name="plus.png" width="100" height="100"/>
+        <image name="switch.png" width="128" height="128"/>
+        <image name="toggle-down.png" width="64" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

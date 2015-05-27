@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LaunchPadKeyPadCore.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
